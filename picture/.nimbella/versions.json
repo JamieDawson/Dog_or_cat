@@ -1,0 +1,35 @@
+[
+  {
+    "apihost": "https://apigcp.nimbella.io",
+    "namespace": "jamierob-hzoysjqazdd",
+    "packageVersions": {},
+    "actionVersions": {
+      "hello": {
+        "version": "0.0.25",
+        "digest": "9b287a3da68a79e7843a8b8754f07bb7e09188c6a5984d47ce2023414f962507"
+      }
+    },
+    "webHashes": {
+      "web\\build\\asset-manifest.json": "686f8daa6b0de73a9393a5fd6ba4650f089f09d4f22473e151f15db93f0413f0",
+      "web\\build\\favicon.ico": "ffc65885a2121141440d345ef5927c4c2917d95b5b2913b7fa8467c95e15120b",
+      "web\\build\\index.html": "363621767df104c8ce42a919c7366c9051e24fd0a677ba37cb16475ce03dba53",
+      "web\\build\\logo192.png": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00",
+      "web\\build\\logo512.png": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461",
+      "web\\build\\manifest.json": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14",
+      "web\\build\\precache-manifest.f24f489881245424b90a2fa24e587dbe.js": "1b515dc51bf8cf0e2ea5e2ab87104b725e5e163d58793284d4947d7b9608d371",
+      "web\\build\\robots.txt": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
+      "web\\build\\service-worker.js": "14d5a3958c66a6d3d57d5f98cc075bad0ee17d81d450595e747336e82f3569ef",
+      "web\\build\\static\\media\\cat_photo.462b95c4.png": "020e4284afd6765a8146d3bf1857cca4c20e07427b6f0c9e7b7d190f3ad2b98e",
+      "web\\build\\static\\media\\dog_photo.a8a3ab5f.png": "2bbdc7d1be079d7a343f35546e73ef7b0ec3007c7bc84ee6b8497cd67799ac16",
+      "web\\build\\static\\js\\2.5ab2c9ec.chunk.js": "bf33bf3f97ef1d3e8b567d321be16f0317151898b7d4bbfd457ce3f45ab75fe8",
+      "web\\build\\static\\js\\2.5ab2c9ec.chunk.js.LICENSE.txt": "46f37d637c7c42ea6193c9f4b4cefe11af24e1280cc381602fbf1219e60ed038",
+      "web\\build\\static\\js\\2.5ab2c9ec.chunk.js.map": "45de282383af7ee15757fc69db341f8bf1df7e31e4a4bd22351b512b9074e40a",
+      "web\\build\\static\\js\\main.7623ffa5.chunk.js": "6ae93e5a336d32639d5bd0c6c2156844176276170ec0f0d0c3823b5c8c7a5154",
+      "web\\build\\static\\js\\main.7623ffa5.chunk.js.map": "cce8e0cc47a58fab5bfd8750435940aa0cb89c5689f9d3f39f11182a3510970c",
+      "web\\build\\static\\js\\runtime-main.b32ff793.js": "357f5680c1885d999076cec46cc586a5ff6d25d75fe66668f5de13e6618cb4fe",
+      "web\\build\\static\\js\\runtime-main.b32ff793.js.map": "e426f9c1622d55abb009d86874c74bee370a7f033a51ed9bed24ac6c3ff7e3b9",
+      "web\\build\\static\\css\\main.f27be9a7.chunk.css": "e6e689367196691209711d29939283f351ae50f9224fd0413c2b5cf02aeb0f22",
+      "web\\build\\static\\css\\main.f27be9a7.chunk.css.map": "32ef9f7123983934cd935e74514c8f07b27aeb3165b9f411e24b0c5eeaffc81a"
+    }
+  }
+]
