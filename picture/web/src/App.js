@@ -21,16 +21,18 @@ function App(){
 		}
 	}
 
-
+//
 //Not working either.
-	// axios.get('../../packages/default/hello', {
-	// 	params: {
-	// 	  name: "world"
-	// 	}
-	//   })
-	//   .then(function (response) {
-	// 	console.log(response);
-	//   })
+useEffect(() => {
+	axios.get('../../packages/default/hello', {
+		params: {
+		  name: "world"
+		}
+	  })
+	  .then(function (response) {
+		console.log(response);
+	  })
+	}, []);
 
 
 
