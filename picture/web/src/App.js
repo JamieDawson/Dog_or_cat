@@ -14,6 +14,7 @@ function App(){
 		//alert(e.target.value)
 		if (e.target.value === "dogButton"){
 			setDogVotes(dogVotes => dogVotes + 1);
+			//send state # of dog to create.js
 		} 
 		if (e.target.value === "catButton") {
 			setCatVotes(catVotes => catVotes + 1);
@@ -21,16 +22,27 @@ function App(){
 	}
 
 
+//Not working either.
+	// axios.get('../../packages/default/hello', {
+	// 	params: {
+	// 	  name: "world"
+	// 	}
+	//   })
+	//   .then(function (response) {
+	// 	console.log(response);
+	//   })
+
 
 
 //loads when the page loads.
-  useEffect(() => {
-	  console.log('found')
-	  //setDogVotes(dogVotes => dogVotes + 1)
-	  axios.get('/api/default/create')
-	  .then(response => console.log(response))
-	  .catch(error => console.log("DID NOT WORK"));
-  }, []);
+//not working
+//   useEffect(() => {
+// 	  console.log('found')
+// 	  //setDogVotes(dogVotes => dogVotes + 1)
+// 	  axios.get('/api/default/hello')
+// 	  .then(response => console.log(response))
+// 	  .catch(error => console.log("DID NOT WORK"));
+//   }, []);
   
 
 		return(
