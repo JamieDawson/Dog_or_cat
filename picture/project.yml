@@ -44,3 +44,6 @@ packages:
         environment: {}
         annotations: {}
         limits: {}
+      - name: getVotes
+      - name: addVote
+

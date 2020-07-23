@@ -12,28 +12,28 @@ function App(){
 	const handleVote = (e) => {
 		//setDogVotes(dogVotes => dogVotes + 1);
 		//alert(e.target.value)
-		if (e.target.value === "dogButton"){
-			setDogVotes(dogVotes => dogVotes + 1);
-			//send state # of dog to create.js
-		} 
-		if (e.target.value === "catButton") {
-			setCatVotes(catVotes => catVotes + 1);
-		}
+
+		axios.post('https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/addVote', {
+			for: e.target.value,
+		  })
+		  .then(function (response) {
+			console.log(response);
+		  })
+		  .catch(function (error) {
+			console.log(error);
+		  });
 	}
 
-//
-//Not working either.
-useEffect(() => {
-	axios.get('../../packages/default/hello', {
-		params: {
-		  name: "world"
-		}
-	  })
-	  .then(function (response) {
-		console.log(response);
-	  })
-	}, []);
 
+	useEffect(() => {
+		axios.get('https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/getVotes')
+		  .then((response) => { return (response.status === 200) ? response.data: {}; })
+		  .then((json) => {
+			console.log(json);
+			setDogVotes(json.dog);
+			setCatVotes(json.cat);
+		  });
+	  }, [])
 
 
 //loads when the page loads.
@@ -49,7 +49,7 @@ useEffect(() => {
 
 		return(
 			<>
-				<h1>Are you a dog person or cat person!!</h1>
+				<h1>Are you a dog person or cat person??????</h1>
 				<div className="languages">
 					
 						<div key="dogKey" className="language">
@@ -57,14 +57,14 @@ useEffect(() => {
 								{dogVotes}
 							</div>
 								<img alt="" src={dog_photo}></img>
-							<button value="dogButton" onClick={handleVote}>Upvote Dog</button>
+							<button value="dog" onClick={handleVote}>Upvote Dog</button>
 						</div>
 							<div key="catKey" className="language">
 							<div className="voteCount">
 								{catVotes}
 							</div>
 								<img alt="" src={cat_photo}></img>
-							<button value="catButton" onClick={handleVote}>Upvote Cat</button>
+							<button value="cat" onClick={handleVote}>Upvote Cat</button>
 						</div>
 						
 					
