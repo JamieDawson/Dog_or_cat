@@ -1,64 +1,56 @@
-import React,{Component} from 'react';
+import React,{ useState, useEffect} from 'react';
 import './App.css';
 import dog_photo from './images/dog_photo.png';
 import cat_photo from './images/cat_photo.png';
+import axios from 'axios';
 
-class App extends Component{
-	constructor(props){
-		super(props);
-		this.state = {
-			languages : [
-				{name: "Dog", votes: 0, photo: dog_photo},
-				{name: "Cat", votes: 0, photo: cat_photo},
-			]
+function App(){ 
+	const [dogVotes, setDogVotes] = useState(0);
+	const [catVotes, setCatVotes] = useState(0);
+
+	const handleVote = (e) => {
+		//setDogVotes(dogVotes => dogVotes + 1);
+		//alert(e.target.value)
+		if (e.target.value === "dogButton"){
+			setDogVotes(dogVotes => dogVotes + 1);
+		} 
+		if (e.target.value === "catButton") {
+			setCatVotes(catVotes => catVotes + 1);
 		}
-  }
-  
- 
+	}
+
+//loads when the page loads.
+  useEffect(() => {
+	  //setDogVotes(dogVotes => dogVotes + 1)
+	 let name =  axios.get('https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/hello')
+	 console.log(name);
+  }, []);
   
 
-	vote (i) {
-		let newLanguages = [...this.state.languages];
-		newLanguages[i].votes++;
-		// function swap(array, i, j) {
-		// 	var temp = array[i];
-		// 	array[i] = array[j];
-		// 	array[j] = temp;
-		// }
-		this.setState({languages: newLanguages});
-		
-  }
-  
-	// downVote (i) {
-	// 	let newLanguages = [...this.state.languages];
-	// 	newLanguages[i].votes--;
-	// 	this.setState({languages: newLanguages});
-		
-  // }
-
-
-	render(){
 		return(
 			<>
-				<h1>Which animal is better?!</h1>
+				<h1>Are you a dog person or cat person!!!!</h1>
 				<div className="languages">
-					{
-						this.state.languages.map((lang, i) => 
-							<div key={i} className="language">
-								<div className="voteCount">
-									{lang.votes}
-								</div>
-                <img alt="" src={lang.photo}></img>
-
-			
-								<button onClick={this.vote.bind(this, i)}>Upvote {lang.name}</button>
-                {/* <button onClick={this.downVote.bind(this, i)}>Downvote {lang.name}</button> */}
+					
+						<div key="dogKey" className="language">
+							<div className="voteCount">
+								{dogVotes}
 							</div>
-						)
-					}
+								<img alt="" src={dog_photo}></img>
+							<button value="dogButton" onClick={handleVote}>Upvote Dog</button>
+						</div>
+							<div key="catKey" className="language">
+							<div className="voteCount">
+								{catVotes}
+							</div>
+								<img alt="" src={cat_photo}></img>
+							<button value="catButton" onClick={handleVote}>Upvote Cat</button>
+						</div>
+						
+					
 				</div>
 			</>
 		);
 	}
-}
+
 export default App;
