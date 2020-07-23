@@ -8,20 +8,20 @@ import axios from 'axios';
 function App(){ 
 	const [dogVotes, setDogVotes] = useState(0);
 	const [catVotes, setCatVotes] = useState(0);
+	const [refreshCounter, setRefreshCounter] = useState(0);
 
 	const handleVote = (e) => {
-		//setDogVotes(dogVotes => dogVotes + 1);
-		//alert(e.target.value)
-
 		axios.post('https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/addVote', {
 			for: e.target.value,
 		  })
 		  .then(function (response) {
+			setRefreshCounter(refreshCounter + 1);
 			console.log(response);
 		  })
 		  .catch(function (error) {
 			console.log(error);
 		  });
+		  
 	}
 
 
@@ -29,23 +29,13 @@ function App(){
 		axios.get('https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/getVotes')
 		  .then((response) => { return (response.status === 200) ? response.data: {}; })
 		  .then((json) => {
+	
 			console.log(json);
 			setDogVotes(json.dog);
 			setCatVotes(json.cat);
 		  });
-	  }, [])
+	  }, [refreshCounter])
 
-
-//loads when the page loads.
-//not working
-//   useEffect(() => {
-// 	  console.log('found')
-// 	  //setDogVotes(dogVotes => dogVotes + 1)
-// 	  axios.get('/api/default/hello')
-// 	  .then(response => console.log(response))
-// 	  .catch(error => console.log("DID NOT WORK"));
-//   }, []);
-  
 
 		return(
 			<>

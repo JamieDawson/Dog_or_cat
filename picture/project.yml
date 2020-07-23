@@ -11,39 +11,6 @@ packages:
     parameters: {}
     annotations: {}
     actions:
-      - name: hello
-        clean: false
-        binary: false
-        main: ''
-        runtime: 'nodejs:default'
-        web: true
-        webSecure: false
-        parameters: {}
-        environment: {}
-        annotations: {}
-        limits: {}
-      - name: create
-        clean: false
-        binary: false
-        main: ''
-        runtime: 'nodejs:default'
-        web: true
-        webSecure: false
-        parameters: {}
-        environment: {}
-        annotations: {}
-        limits: {}
-      - name: get
-        clean: false
-        binary: false
-        main: ''
-        runtime: 'nodejs:default'
-        web: true
-        webSecure: false
-        parameters: {}
-        environment: {}
-        annotations: {}
-        limits: {}
       - name: getVotes
       - name: addVote
 

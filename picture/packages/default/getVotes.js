@@ -1,4 +1,14 @@
-function main(args) {
+
+  const nimbella = require('nim');
+  const redis = nimbella.redis()
  
-    return {"body": { "dog": 3, "cat": 4}}
+  async function main(args) {
+    const dog = await redis.getAsync("dog"); //increment a key dog or cat
+    const cat = await redis.getAsync("cat");
+   
+
+    return {
+      "body": { "dog": dog, "cat": cat
+    } 
+  } 
   }
