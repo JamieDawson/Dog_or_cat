@@ -4,6 +4,7 @@ import dog_photo from './images/dog_photo.png';
 import cat_photo from './images/cat_photo.png';
 import axios from 'axios';
 
+
 function App(){ 
 	const [dogVotes, setDogVotes] = useState(0);
 	const [catVotes, setCatVotes] = useState(0);
@@ -19,17 +20,22 @@ function App(){
 		}
 	}
 
+
+
+
 //loads when the page loads.
   useEffect(() => {
+	  console.log('found')
 	  //setDogVotes(dogVotes => dogVotes + 1)
-	 let name =  axios.get('https://apigcp.nimbella.io/api/v1/web/jamierob-hzoysjqazdd/default/hello')
-	 console.log(name);
+	  axios.get('/api/default/create')
+	  .then(response => console.log(response))
+	  .catch(error => console.log("DID NOT WORK"));
   }, []);
   
 
 		return(
 			<>
-				<h1>Are you a dog person or cat person!!!!</h1>
+				<h1>Are you a dog person or cat person!!</h1>
 				<div className="languages">
 					
 						<div key="dogKey" className="language">
