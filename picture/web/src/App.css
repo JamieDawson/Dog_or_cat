@@ -16,9 +16,14 @@ h1 {
 
 img {
   float: left;
-  width:  140px;
-  height: 140px;
+  width:  150px;
+  height: 150px;
   object-fit: cover;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 15px 15px rgba(145, 92, 182, .4);
 }
 
 .languages {
@@ -49,7 +54,7 @@ img {
 }
 
 .language button {
-  background-color: #4CAF50; /* Green */
+  background-color: #05a0b5; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;

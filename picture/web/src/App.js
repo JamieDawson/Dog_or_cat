@@ -47,14 +47,14 @@ function App(){
 								{dogVotes}
 							</div>
 								<img alt="" src={dog_photo}></img>
-							<button  value="dog" onClick={handleVote}>Upvote Dog</button>
+							<button class="button glow-button"  value="dog" onClick={handleVote}>Upvote Dog</button>
 						</div>
 							<div key="catKey" className="language">
 							<div className="voteCount">
 								{catVotes}
 							</div>
 								<img alt="" src={cat_photo}></img>
-							<button value="cat" onClick={handleVote}>Upvote Cat</button>
+							<button class="button glow-button" value="cat" onClick={handleVote}>Upvote Cat</button>
 						</div>
 						
 					
