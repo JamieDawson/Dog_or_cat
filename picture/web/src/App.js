@@ -39,7 +39,7 @@ function App(){
 
 		return(
 			<>
-				<h1>Are you a dog person or cat person?</h1>
+				<h1>Are you a dog person or a cat person?</h1>
 				<div className="languages">
 					
 						<div key="dogKey" className="language">
