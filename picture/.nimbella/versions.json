@@ -5,43 +5,43 @@
     "packageVersions": {},
     "actionVersions": {
       "addVote": {
-        "version": "0.0.21",
-        "digest": "dd02053f4f5e98b86b5cc0f52e004ceb6e6b77f219468cedf6c8eb2d65a806cf"
+        "version": "0.0.25",
+        "digest": "c08e7482370b4556fd1c672b8592f4576a0a24789d88be76af5095fdc1442abe"
       },
       "create": {
-        "version": "0.0.36",
+        "version": "0.0.35",
         "digest": "d2205c12024e9ff2f4f3143d0cc801f1f23d1d521c3ed99dadab2b3e1ff3db52"
       },
       "get": {
-        "version": "0.0.36",
+        "version": "0.0.34",
         "digest": "f116bf3df27f0486e913ab30a794cf06e0ba48e623d17f69f6bc49ea86dc3231"
       },
       "getVotes": {
-        "version": "0.0.36",
-        "digest": "32b09db31624c71615ef7ed3181001499c5e8c0920d0f03c01263f77a90787ef"
+        "version": "0.0.40",
+        "digest": "1cb403dcf9b12d35dd4a7042184d11758142e649752ded371b828095641348e1"
       }
     },
     "webHashes": {
-      "web\\build\\asset-manifest.json": "c2aefbb36ab69cf637cd8f127716db13dde1cfa15dff1dbb655f8413bfee88ee",
+      "web\\build\\asset-manifest.json": "228d6224dd5d6c548ef131957f47b812ab769ad3aff437bbcfdf6dac7897b477",
       "web\\build\\favicon.ico": "ffc65885a2121141440d345ef5927c4c2917d95b5b2913b7fa8467c95e15120b",
-      "web\\build\\index.html": "b763b32fe564eff8fd0c6cacf22bad7c00c0cfc5ecc8df2b5d3cf998a8b1f8fa",
+      "web\\build\\index.html": "25ea788ba036b6be614e18cd3d2ef16d0d160294f055e94bfab6bebdb9c45064",
       "web\\build\\logo192.png": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00",
       "web\\build\\logo512.png": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461",
       "web\\build\\manifest.json": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14",
-      "web\\build\\precache-manifest.a37f39567dbc5058765ebc17a57933e2.js": "ab58fea8c21ad430c92968cc6b8a6ff124bfad84141852f46bf1185c6d666763",
+      "web\\build\\precache-manifest.ad5855a62349868e1eb88883a2880084.js": "89c8c6575b4823ca330c98afca17d061a0b085b55270121b54411de4dbd6eb03",
       "web\\build\\robots.txt": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2",
-      "web\\build\\service-worker.js": "a585381956c9906ffe0008bd339b7b5dbf9161289f3856908f1fcccb5934c8ca",
+      "web\\build\\service-worker.js": "99aedc94095c7c3cb50444080162efbba4551d679f85bddb29e798fea7f97a41",
       "web\\build\\static\\media\\cat_photo.2a0c77c3.png": "4ac43b95408d93b77b6d51a332564c25474850b607fc966d2517138ded358671",
       "web\\build\\static\\media\\dog_2.cf358d60.jpg": "d29d1c7dbf8fc899e99b4b1050178df84e27daf3e74ecd3b3f31acd27f314eff",
       "web\\build\\static\\js\\2.bdb7f772.chunk.js": "1fe5cfd92b7b09012d0304248d9ae816933e2272982ecf881faa39d57dbbd05e",
       "web\\build\\static\\js\\2.bdb7f772.chunk.js.LICENSE.txt": "46f37d637c7c42ea6193c9f4b4cefe11af24e1280cc381602fbf1219e60ed038",
       "web\\build\\static\\js\\2.bdb7f772.chunk.js.map": "4aaf379e4a3f8fc09f8e04880d103e390f2101c8ef3450a3c6b49ebc78abc5e4",
-      "web\\build\\static\\js\\main.70f23982.chunk.js": "10eccf4f8696e9f20c638a5a356c1e4171bbc4a74ccadb0002dfa8388b8c557d",
-      "web\\build\\static\\js\\main.70f23982.chunk.js.map": "18cb268b93d46599e46d53f429b2aa03a03ea3cdbb0dcf53d5b0a1055919ab55",
+      "web\\build\\static\\js\\main.5bf8e26f.chunk.js": "eb53b8618b5514828a13a74e9098bd50af8320b6ec1eb27aaa9b68e166943fa2",
+      "web\\build\\static\\js\\main.5bf8e26f.chunk.js.map": "f3063ce2ae6c1dfeb618123967f72e21dc0964804a450dc74ece81ce2d414aa8",
       "web\\build\\static\\js\\runtime-main.b32ff793.js": "357f5680c1885d999076cec46cc586a5ff6d25d75fe66668f5de13e6618cb4fe",
       "web\\build\\static\\js\\runtime-main.b32ff793.js.map": "e426f9c1622d55abb009d86874c74bee370a7f033a51ed9bed24ac6c3ff7e3b9",
-      "web\\build\\static\\css\\main.77f09954.chunk.css": "3f6fca91d8c591c69f9f6fe0beb65240d56a5d59237ba703ee0a0d57f75a4c83",
-      "web\\build\\static\\css\\main.77f09954.chunk.css.map": "cdb4b2eb6f20ec147fe97a8696c9436263eb4895663ab9e8a38ac3637b2cd35a"
+      "web\\build\\static\\css\\main.c791e5cf.chunk.css": "f75b2c05bf088aa7ae0974b5be193f240eb97bd705a06dbd68d2fe520a5a011c",
+      "web\\build\\static\\css\\main.c791e5cf.chunk.css.map": "5f470ebe1a501ecca507d94eba7f6bf1a3771153e8c5851a62c4fba6505dbbb4"
     }
   }
 ]
